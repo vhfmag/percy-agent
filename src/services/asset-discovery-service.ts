@@ -255,7 +255,7 @@ export class AssetDiscoveryService extends PercyClientService {
 
     try {
       profile('--> assetDiscoveryService.page.goto', { url: rootResourceUrl })
-      await page.goto(rootResourceUrl)
+      await page.goto(rootResourceUrl, { timeout: this.configuration['navigation-timeout'] })
       profile('--> assetDiscoveryService.page.goto')
 
       profile('--> assetDiscoveryService.waitForNetworkIdle')

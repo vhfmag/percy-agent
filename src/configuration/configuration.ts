@@ -25,6 +25,7 @@ export const DEFAULT_CONFIGURATION: Configuration = {
       'request-headers': {},
       'allowed-hostnames': [],
       'network-idle-timeout': 50, // ms
+      'navigation-timeout': 30000, // ms
       'page-pool-size-min': 1, // pages
       'page-pool-size-max': 5, // pages
       'cache-responses': false,

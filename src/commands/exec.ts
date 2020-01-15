@@ -28,6 +28,12 @@ export default class Exec extends PercyCommand {
         'Asset discovery network idle timeout (in milliseconds)',
       ].join(' '),
     }),
+    'navigation-timeout': flags.integer({
+      description: [
+        `[default: ${DEFAULT_CONFIGURATION.agent['asset-discovery']['navigation-timeout']}]`,
+        'Asset discovery navigation timeout (in milliseconds)',
+      ].join(' '),
+    }),
     'cache-responses': flags.boolean({
       description: [
         `[default: ${DEFAULT_CONFIGURATION.agent['asset-discovery']['cache-responses']}]`,
